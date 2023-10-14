@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 //pages
 import Home from './pages/Home';
 import ProductDetails from './pages/ProductDetails';
+import Men from './pages/Men';
+import Women from './pages/Women';
 //components
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
@@ -15,6 +17,8 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element= {<Home/>}/>
+        <Route path='/Men' element = {<Men/>} />
+        <Route path='/Women' element = {<Women/>} />
         <Route path = 'product/:id' element = 
         {<ProductDetails/>}/>
       </Routes>

@@ -29,6 +29,13 @@ const Header = () => {
     <Link to={'/'}>
       <img className='w-[40px]' src={Logo} alt = ''/>
     </Link>
+    {/* nav bar option */}
+    <div className='grid grid-cols-1 md:grid-cols-2
+        lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto
+        md:max-w-none md:mx-0'>
+    <Link className='font-semibold' to={'/Men'}>Men</Link>
+    <Link className='font-semibold' to = {'/Women'}>Women</Link>
+    </div>
     {/* cart */}
     <div onClick={()=> setIsOpen(!isOpen)}
     className='cursor-pointer flex relative'

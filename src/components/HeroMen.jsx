@@ -16,7 +16,7 @@ const Hero = () => {
       <h1 className='text-[70px] leading-[1.1] font-light
       mb-4'>
         Clothify <br/>
-        <span className='font-semibold'>Trending Clothes</span>
+        <span className='font-semibold'>MENS</span>
       </h1>
       <Link
       to={'/'}
